@@ -1,11 +1,7 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 * {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-
     margin: 0;
     padding: 0;
     border: none;
@@ -17,9 +13,10 @@ html {
     --orange: #CD8C5E;
     --white: #FAFAFA;
     --red: #E83F5B;
-    --grey3: #ADB5BD;
     --grey-light: #DEE2E6;
     --grey-dark: #868E96;
+    --grey3: #ADB5BD;
+    --grey4: #DEE2E6;
     --turquoise: #72BFB2;
     --blue: #00223B;
 
@@ -27,4 +24,14 @@ html {
     /*1rem = 16px = 100%*/
     /* font-size: 62.5%; */
     /* dividido por 10*/
+}
+
+header {
+    font-family: "Poppins";
+    font-weight: 500;
+    font-style: normal;
+}
+
+body{
+    background: rgb(245, 245, 245);
 }
