@@ -112,7 +112,6 @@ a {
 }
 
 
-
 /* Responsividade */
 @media(max-width: 905px) {
 
@@ -168,7 +167,7 @@ a {
     }
 
     .menu {
-        margin: 0 5px;    
+        margin: 0 5px;
     }
 
 
@@ -188,8 +187,7 @@ a {
         margin-top: 3px;
     }
 
-    .social {
-    }
+    .social {}
 
     .social img {
         width: 3rem;
@@ -218,7 +216,7 @@ a {
     }
 }
 
-@media(max-width: 426px){
+@media(max-width: 426px) {
     .social {
         font-size: 11px;
     }
@@ -227,5 +225,18 @@ a {
         width: 3rem;
         height: 3rem;
         margin-left: 20px;
+    }
+}
+
+/* .rodape a {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  } */
+@media(max-width: 400px) {
+    .logo img {
+        margin-top: 0.31rem;
+        width: 100%;
+        height: auto;
     }
 }
