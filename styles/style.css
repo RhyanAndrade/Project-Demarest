@@ -207,7 +207,7 @@ a {
         /* margin-right: 10px; */
     }
 
-    .rodape {
+    /* .rodape {
         display: flex;
         background-color: var(--grey-light);
         color: var(--blue);
@@ -220,7 +220,8 @@ a {
         font-size: 15px;
         gap: 15px;
         bottom: 0;
-    }
+        cursor: pointer;
+    } */
 }
 
 @media(max-width: 426px) {
