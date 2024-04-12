@@ -1,0 +1,39 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.rodape a p {
+        font-family: "Whisper", cursive !important;
+        font-weight: 100;
+        font-style: normal;
+      
+}
+
+html {
+    --orange: #CD8C5E;
+    --white: #FAFAFA;
+    --red: #E83F5B;
+    --grey3: #ADB5BD;
+    --grey-light: #DEE2E6;
+    --grey-dark: #868E96;
+    --turquoise: #72BFB2;
+    --blue: #00223B;
+
+
+    /*1rem = 16px = 100%*/
+    /* font-size: 62.5%; */
+    /* dividido por 10*/
+}
