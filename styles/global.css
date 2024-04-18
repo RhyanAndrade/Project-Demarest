@@ -32,8 +32,10 @@ header, .process{
     font-style: normal;
 }
 
-main{
+main, .social p{
     font-family: "Roboto", sans-serif;
+    font-weight: 600;
+
 }
 
 body{

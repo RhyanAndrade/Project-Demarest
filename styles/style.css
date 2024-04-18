@@ -96,12 +96,13 @@ li a {
     margin-right: 0.62rem;
 }
 
+
 .arrow {
     padding: 2%;
     margin-left: 6%;
 }
 
-.arrow-left img:hover{
+.arrow-left img:hover, .social img:hover{
     -webkit-transition: scale(1,1);
     
    transform: scale(1.1);
