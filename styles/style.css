@@ -48,7 +48,7 @@ ul {
 }
 
 .menu,
-a {
+li a {
     display: flex;
     gap: 3.25rem;
     justify-content: center;
@@ -96,6 +96,60 @@ a {
     margin-right: 0.62rem;
 }
 
+.arrow {
+    padding: 2%;
+    margin-left: 6%;
+}
+
+.arrow-left img:hover{
+    -webkit-transition: scale(1,1);
+    
+   transform: scale(1.1);
+}
+
+.process {
+    max-width: 323px;
+    height: 116px;
+    font-size: 90%;
+    margin-left: 9%;
+}
+
+.process p, .menu-data a {
+    color: var(--grey3);
+}
+
+.data {
+
+    gap: 13px;
+    max-width: 450px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    margin-left: 8%;
+    margin-top: 10px;
+}
+
+.data a{
+    width: 118px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    color: rgb(98, 98, 98);
+    transition: 0.5s ease-in-out;
+    font-size: smaller;
+}
+
+.data a:hover{
+    color:var(--grey-light);
+    background-color: var(--turquoise);
+    transition: 0.5s ease-in-out;
+
+}
 
 .rodape {
     text-decoration: none;
@@ -115,16 +169,35 @@ a {
     gap: 25px;
     bottom: 0;
     cursor: pointer;
-    
+
 }
 
 
 /* Responsividade */
+@media(max-width: 1300px) {
+
+    .container,
+    ul {
+        padding: auto;
+        max-width: 65.60rem;
+    }
+}
+
 @media(max-width: 905px) {
+
+    .container,
+    ul {
+        padding: 0 20px;
+    }
+
 
     .menu,
     a {
         gap: 1.25rem;
+    }
+
+    .data{
+        margin-left:5% ;
     }
 }
 
@@ -161,20 +234,20 @@ a {
     .menu {
         cursor: pointer;
         position: fixed;
-        left: 100%;
+        left: -100%;
         top: 70px;
         gap: 0;
         background: var(--blue);
         text-align: center;
         flex-direction: column;
         width: 100%;
-        height: 95%;
+        height: 45%;
         transition: 0.5s;
-        border-radius: 20px 0 20px 20px;
+        border-radius: 20px 0 0 20px;
     }
 
     .menu {
-        margin: 0 5px;
+        margin: 16px 0;
     }
 
 
@@ -184,6 +257,9 @@ a {
         margin-top: 20px;
         left: 0;
     }
+
+
+
 }
 
 @media(max-width: 540px) {
@@ -194,7 +270,10 @@ a {
         margin-top: 3px;
     }
 
-    .social {}
+    .container,
+    ul {
+        padding: 0;
+    }
 
     .social img {
         width: 3rem;
@@ -204,24 +283,9 @@ a {
 
     .social {
         font-size: 13px;
-        /* margin-right: 10px; */
     }
 
-    /* .rodape {
-        display: flex;
-        background-color: var(--grey-light);
-        color: var(--blue);
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-        position: fixed;
-        width: 100%;
-        height: 40px;
-        font-size: 15px;
-        gap: 15px;
-        bottom: 0;
-        cursor: pointer;
-    } */
+
 }
 
 @media(max-width: 426px) {

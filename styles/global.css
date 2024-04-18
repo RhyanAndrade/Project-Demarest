@@ -13,7 +13,7 @@ html {
     --orange: #CD8C5E;
     --white: #FAFAFA;
     --red: #E83F5B;
-    --grey-light: #DEE2E6;
+    --grey-light: #f9f9f9;
     --grey-dark: #868E96;
     --grey3: #ADB5BD;
     --grey4: #DEE2E6;
@@ -26,12 +26,17 @@ html {
     /* dividido por 10*/
 }
 
-header {
+header, .process{
     font-family: "Poppins";
     font-weight: 500;
     font-style: normal;
 }
 
+main{
+    font-family: "Roboto", sans-serif;
+}
+
 body{
     background: rgb(245, 245, 245);
+    color: var(--blue);
 }
