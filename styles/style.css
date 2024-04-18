@@ -173,12 +173,10 @@ li a {
     background-color: #fff;  
     color: var(--blue); 
     border-radius: 4px;
-}
-
-.card1,.card2{
     margin-top: 38px;
     padding: 2.90%
 }
+
 
 .card1 h4{
     color: #868E96;
