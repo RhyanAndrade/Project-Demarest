@@ -1,14 +1,18 @@
+/* HEADER */
 header {
-    padding: 0.625rem;
-    height: 4.37rem;
     background-color: white;
-    width: 100%;
     box-shadow: 6px 6px 8px var(--grey-light);
 }
 
-.hamburguer {
-    cursor: pointer;
-    display: none;
+.navbar {
+    padding: 0.625rem;
+    height: 4.37rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
 .bar {
@@ -23,13 +27,13 @@ header {
 
 .container,
 ul {
-    max-width: 71.75rem;
-    display: flex;
     align-items: center;
-    text-align: center;
-    justify-content: center;
-    margin: 0 auto;
     list-style-type: none;
+}
+
+.container{
+    padding:0 3% 0 3%;
+    display: flex;
 }
 
 .logo img {
@@ -53,22 +57,19 @@ li a {
     gap: 3.25rem;
     justify-content: center;
     color: var(--blue);
-}
-
-.menu a {
     position: relative;
+
 }
 
 .menu a::after {
     content: " ";
     width: 0%;
-    height: 2px;
+    height: 1px;
     background-color: var(--orange);
     position: absolute;
     bottom: 0;
     left: -8;
-
-    transition: 0.4s ease-in-out;
+    transition: 0.4s;
 }
 
 .menu a:hover::after {
@@ -76,7 +77,7 @@ li a {
     color: var(--orange);
 }
 
-.menu a:hover {
+.menu a:hover, .card2-title {
     color: var(--orange);
 }
 
@@ -87,6 +88,8 @@ li a {
     text-align: center;
     justify-content: center;
     margin: 0 auto;
+    font-size: 14px;
+
 }
 
 .social img {
@@ -97,60 +100,96 @@ li a {
 }
 
 
+
+/* CONTEÚDO */
+
 .arrow {
     padding: 2%;
-    margin-left: 6%;
+    margin-left: 1%;
 }
 
-.arrow-left img:hover, .social img:hover{
-    -webkit-transition: scale(1,1);
+.arrow-left img:hover,
+.social img:hover {
+    -webkit-transition: scale(1, 1);
     
-   transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .process {
     max-width: 323px;
     height: 116px;
     font-size: 90%;
-    margin-left: 9%;
 }
 
-.process p, .menu-data a {
+.process p,
+.menu-data a {
+    margin-top: 5px;
     color: var(--grey3);
 }
 
-.data {
-
+.data-link {
     gap: 13px;
     max-width: 450px;
-    height: 34px;
+    height: 45px;
     display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: space-between;
-    margin-left: 8%;
-    margin-top: 10px;
 }
 
-.data a{
+.data-link a {
     width: 118px;
-    height: 100%;
     display: flex;
-    flex-direction: column;
+    height: 45px;
     align-items: center;
     justify-content: center;
     border-radius: 4px;
-    color: rgb(98, 98, 98);
+    color: #868E96;
     transition: 0.5s ease-in-out;
+    margin-top: 15px;
+}
+
+.data-link a:hover {
+    color: var(--grey-light);
+    background-color: var(--turquoise);
+    transition: 0.5s ease-in-out;
+    
+}
+
+.data {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 16px;
+    margin:4% 3% 0 3%;
+}
+
+.data-link,
+.process {
+    margin:0 3% 0 3%;
+}
+
+.card1, .card2{
+    width: 564px;
+    height: 304px;
+    background-color: #fff;  
+    color: var(--blue); 
+    border-radius: 4px;
+}
+
+.card1,.card2{
+    margin-top: 38px;
+    padding: 2.90%
+}
+
+.card1 h4{
+    color: #868E96;
     font-size: smaller;
 }
 
-.data a:hover{
-    color:var(--grey-light);
-    background-color: var(--turquoise);
-    transition: 0.5s ease-in-out;
-
+.card2{
+    margin-top: 15px;
 }
+
+
 
 .rodape {
     text-decoration: none;
@@ -164,24 +203,21 @@ li a {
     text-align: center;
     align-items: center;
     justify-content: center;
-    position: fixed;
+    position: static;
     width: 100%;
     height: 40px;
     gap: 25px;
     bottom: 0;
     cursor: pointer;
-
 }
 
 
-/* Responsividade */
-@media(max-width: 1300px) {
 
-    .container,
-    ul {
-        padding: auto;
-        max-width: 65.60rem;
-    }
+/* Responsividade / Menu hambúguer*/
+
+.hamburguer {
+    cursor: pointer;
+    display: none;
 }
 
 @media(max-width: 905px) {
@@ -197,8 +233,8 @@ li a {
         gap: 1.25rem;
     }
 
-    .data{
-        margin-left:5% ;
+    .data-link {
+        margin-left: 5%;
     }
 }
 
