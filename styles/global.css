@@ -27,7 +27,8 @@ body {
     color: var(--blue);
 }
 
-main, .card1 h4{
+main,
+.card1 h4 {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     display: flex;
@@ -36,11 +37,9 @@ main, .card1 h4{
     max-width: 1300px;
     margin: 0 auto;
 }
-.social p {
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
-    
-}
+
+
+
 header,
 .process {
     font-family: "Poppins";

@@ -1,7 +1,8 @@
 /* HEADER */
 header {
     background-color: white;
-    box-shadow: 6px 6px 8px var(--grey-light);
+    box-shadow: 0px 4px 5px 0px #0000000F;
+
 }
 
 .navbar {
@@ -23,6 +24,7 @@ header {
     margin: 5px auto;
     background-color: var(--blue);
     transition: all 0.3s ease-in-out;
+
 }
 
 .container,
@@ -31,8 +33,8 @@ ul {
     list-style-type: none;
 }
 
-.container{
-    padding:0 3% 0 3%;
+.container {
+    padding: 0 3% 0 3%;
     display: flex;
 }
 
@@ -58,13 +60,18 @@ li a {
     justify-content: center;
     color: var(--blue);
     position: relative;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    letter-spacing: -0.01em;
+    text-align: left;
 
 }
 
 .menu a::after {
     content: " ";
     width: 0%;
-    height: 1px;
+    height: 2px;
     background-color: var(--orange);
     position: absolute;
     bottom: 0;
@@ -77,7 +84,8 @@ li a {
     color: var(--orange);
 }
 
-.menu a:hover, .card2-title {
+.menu a:hover,
+.card2-title {
     color: var(--orange);
 }
 
@@ -93,28 +101,42 @@ li a {
 }
 
 .social img {
-    width: 3.37rem;
-    height: 3.37rem;
     border-radius: 50%;
     margin-right: 0.62rem;
+    width: 54px;
+    height: 54px;
+    gap: 0px;
+    opacity: 0px;
+
 }
 
-
+.social p {
+    color: #ADB5BD;
+    font-size: 15px;
+    line-height: 19.2px;
+    letter-spacing: -0.01em;
+}
 
 /* CONTEÚDO */
 
+/* SETA */
 .arrow {
     padding: 2%;
     margin-left: 1%;
+    width: 40px;
+    gap: 0px;
+    opacity: 0px;
+
 }
 
 .arrow-left img:hover,
-.social img:hover {
+.social img:hover{
     -webkit-transition: scale(1, 1);
-    
+
     transform: scale(1.1);
 }
 
+/* PROCESSO */
 .process {
     max-width: 323px;
     height: 116px;
@@ -124,14 +146,17 @@ li a {
 .process p,
 .menu-data a {
     margin-top: 5px;
-    color: var(--grey3);
+    color: var(--grey-dark);
 }
 
+
+/* DADOS */
 .data-link {
     gap: 13px;
     max-width: 450px;
     height: 45px;
     display: flex;
+    margin-top: 5px !important;
 }
 
 .data-link a {
@@ -141,54 +166,68 @@ li a {
     align-items: center;
     justify-content: center;
     border-radius: 4px;
-    color: #868E96;
+    color: var(--grey-dark);
     transition: 0.5s ease-in-out;
-    margin-top: 15px;
 }
 
 .data-link a:hover {
     color: var(--grey-light);
     background-color: var(--turquoise);
     transition: 0.5s ease-in-out;
-    
+
 }
 
-.data {
+.data-link,
+.process {
+    margin: 0 3% 0 3%;
+}
+
+/* CARDS */
+.cards {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
     gap: 16px;
-    margin:4% 3% 0 3%;
+    margin: 4% 3% 0 3%;
 }
 
-.data-link,
-.process {
-    margin:0 3% 0 3%;
-}
 
-.card1, .card2{
-    width: 564px;
+
+.card1,.card2 {
     height: 304px;
-    background-color: #fff;  
-    color: var(--blue); 
+    top: 40px;
+    gap: 0px;
+    background-color: #fff;
+    box-shadow: 0px 2px 10px 0px #3741511A;
     border-radius: 4px;
-    margin-top: 38px;
-    padding: 2.90%
+    color: var(--blue);
 }
 
+.card1 {
+    margin-top: 38px;
+    padding: 1.90%;
+}
+
+.card1, .card2-title, .card2{
+    width: 90%;
+    max-width: 566px;
+}
 
 .card1 h4{
-    color: #868E96;
-    font-size: smaller;
+    color: var(--grey-dark);
+}
+
+.card2-title h3 {
+    padding: 8px 0;
 }
 
 .card2{
-    margin-top: 15px;
+    width: 100%;
 }
 
 
-
+/* RODAPÉ */
 .rodape {
     text-decoration: none;
     font-family: "Roboto", sans-serif;
@@ -233,14 +272,14 @@ li a {
 
     .data-link {
         margin-left: 5%;
+        font-size: 15px;
     }
+
 }
 
 
 @media(max-width: 768px) {
-    body {
-        overflow-x: hidden;
-    }
+
 
     .hamburguer {
         display: block;
@@ -278,26 +317,26 @@ li a {
         width: 100%;
         height: 45%;
         transition: 0.5s;
-        border-radius: 20px 0 0 20px;
-    }
-
-    .menu {
+        border-radius: 20px 20px 20px 20px;
+        width: 96%;
+        height: 47%;
         margin: 16px 0;
+
     }
 
 
     .menu.active,
     .menu a {
         color: white;
-        margin-top: 20px;
-        left: 0;
+        margin-top: 26px;
+        left: 0px;
     }
 
 
 
 }
 
-@media(max-width: 540px) {
+@media(max-width: 590px) {
 
     header {
         height: 5.20rem;
@@ -308,6 +347,7 @@ li a {
     .container,
     ul {
         padding: 0;
+        margin-top: 11px;
     }
 
     .social img {
@@ -324,8 +364,8 @@ li a {
 }
 
 @media(max-width: 426px) {
-    .social {
-        font-size: 11px;
+    .social p {
+        font-size: 13px;
     }
 
     .social img {
@@ -339,12 +379,13 @@ li a {
         width: 100%;
         height: auto;
     }
-}
 
-@media(max-width: 400px) {
-    .logo img {
-        margin-top: 0.31rem;
-        width: 100%;
-        height: auto;
+    .data-link {
+        font-size: 13px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
+
+
 }
