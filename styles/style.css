@@ -307,7 +307,7 @@ li a {
 
     .menu {
         cursor: pointer;
-        position: fixed;
+        position: absolute;
         left: -100%;
         top: 70px;
         gap: 0;
