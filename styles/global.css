@@ -28,7 +28,8 @@ body {
 }
 
 main,
-.card1 h4 {
+.card1 h4,
+.values {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     display: flex;

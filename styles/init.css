@@ -9,12 +9,12 @@ body {
     height: 100v;
 }
 
-.user{
+.user {
     background: white;
     width: 300px;
-height: 300px;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
