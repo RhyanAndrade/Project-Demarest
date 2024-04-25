@@ -29,9 +29,13 @@ body {
 
 main,
 .card1 h4,
-.values {
+.value h5,
+.classification h5,
+.classification h5,
+.payments{
     font-family: "Roboto", sans-serif;
     font-weight: 500;
+    font-size: medium;
     display: flex;
     flex-direction: column;
     justify-content: center;
