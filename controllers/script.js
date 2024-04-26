@@ -1,3 +1,5 @@
+const apexchartsMin = require("./apexcharts.min");
+
 // Extraindo as classes do HTML
 const hamburguer = document.querySelector(".hamburguer");
 const navMenu = document.querySelector(".menu");
@@ -9,3 +11,4 @@ hamburguer.addEventListener("click", ()=>{
     navMenu.classList.toggle('active');
     imgSocial.classList.toggle('active')
 });
+

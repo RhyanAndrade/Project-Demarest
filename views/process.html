@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="/styles/global.css">
+    <script src="/controllers/apexcharts.min.js"></script>
     <title>Demarest</title>
 </head>
 
@@ -91,6 +92,9 @@
                 <div class="card2-title">
                     <h3>Consumo total do contrato</h3>
                     <div class="card2">
+                        <div id="grafico">
+                            <p>R$ 75.000,00 / 100.000,00</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -146,7 +150,46 @@
             <p><a href="\"></a>Política de privacidade</a></p>
         </div>
     </footer>
+    <script>
+        let elemento = document.getElementById('grafico');
+        let options = {
+            chart: {
+                heigth: 280,
+                type: 'radialBar'
+            },
 
+            series: [75],
+            colors: ["var(--orange)"],
+            plotOptions: {
+                radialBar: {
+                    startAngle: -90,
+                    endAngle: 90,
+                    track: {
+                        background: 'var(--grey-light)',
+                        startAngle: -90,
+                        endAngle: 90,
+                    },
+                    dataLabels: {
+                        name: {
+                            show: false,
+                        },
+                        value: {
+                            fontSize: "50px",
+                            show: true,
+                        }
+                    }
+                }
+            },
+            stroke: {
+                lineCap: "butt"
+            },
+            labels: ["Progress"]
+        };
+
+        let chart = new ApexCharts(elemento, options);
+        chart.render();
+
+    </script>
     <script src="/controllers/script.js"></script>
 </body>
 
